@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button"
+import AuthForm from './AuthForm';
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
+    <div className='h-screen flex justify-center items-center bg-gray-200 px-8'>
+      <AuthForm />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -7,8 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://wowxoxo.github.io/coolapp-auth-form",
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
     "@tailwindcss/vite": "^4.1.3",
