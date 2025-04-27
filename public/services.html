@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Выберите услугу</h1>
+    <button onclick="selectService('select_service1')">Услуга №1</button>
+    <button onclick="selectService('select_service2')">Услуга №2</button>
+    <button onclick="selectService('select_service3')">Услуга №3</button>
+
+    <script>
+        function selectService(service) {
+            window.location.href = `coolapp://service?event=${service}`;
+        }
+    </script>
+</body>
+</html>
